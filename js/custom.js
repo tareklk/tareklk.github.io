@@ -2,6 +2,11 @@
     Version: 1.0
 /****************************************** */
 
+$(document).on("click", ".gallery-single.fix", function() {
+    $(this).find("a[data-toggle='modal']").click();
+});
+
+
 (function($) {
     "use strict";
 
