@@ -13,6 +13,7 @@ $(document).ready(function(){
         $(".heading").attr('style',"display:block!important;top:150px;background-size: 100%;");
         $("button[data-filter='.gal_a']").attr("style","margin-bottom:10px");
         $("button[data-filter='.gal_b']").attr("style","margin-bottom:10px");
+        $("button[data-filter='.gal_c']").attr("style","margin-bottom:10px");
         $("div .button-group.filter-button-group.text-left").addClass("pt-3 pb-3");
         $("div .gallery-single.fix").attr("style","text-align:center");
         $("div .post-thumb").attr("style","text-align:center");
