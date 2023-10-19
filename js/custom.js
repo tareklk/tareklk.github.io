@@ -2,9 +2,22 @@
     Version: 1.0
 /****************************************** */
 
+$(document).ready(function(){
+
+    let details = navigator.userAgent;
+    let regexp = /android|iphone|kindle|ipad/i;
+    let isMobileDevice = regexp.test(details);
+
+    if (isMobileDevice) {
+        $("#home").attr('style',"background: url('images/home.jpg')");
+    } 
+
+});
+
 $(document).on("click", ".gallery-single.fix", function() {
     $(this).find("a[data-toggle='modal']").click();
 });
+
 
 
 (function($) {
