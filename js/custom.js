@@ -9,8 +9,8 @@ $(document).ready(function(){
     let isMobileDevice = regexp.test(details);
 
     if (isMobileDevice) {
-        $("#home").attr('style',"background: url('images/home.jpg')");
-    } 
+        $("#home").attr('style',"background: url('images/home-mobile.jpg')");
+    }
 
 });
 
