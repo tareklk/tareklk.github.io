@@ -9,8 +9,8 @@ $(document).ready(function(){
     let isMobileDevice = regexp.test(details);
 
     if (isMobileDevice) {
-        $("#home").attr('style',"background: url('images/home-mobile.jpg');height:400px!important;");
-        $(".heading").attr('style',"display:block!important;top:30%;background-size: 100%;");
+        $("#home").attr('style',"background: url('images/home-mobile.jpg');height:500px!important;background-size: 100%;");
+        $(".heading").attr('style',"display:block!important;top:40%;background-size: 100%;");
     }
 
 });
