@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     if (isMobileDevice) {
         $("#home").attr('style',"background: url('images/home-mobile.jpg');height:400px!important;");
-        $(".heading").attr('style',"display:block!important;top:30%;");
+        $(".heading").attr('style',"display:block!important;top:30%;background-size: 100%;");
     }
 
 });
