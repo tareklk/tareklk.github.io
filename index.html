@@ -1,796 +1,429 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <!-- Basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
-   
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
- 
-     <!-- Site Metas -->
-    <title>Tarek Lichaa El Khoury</title>  
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon2.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
-	<script src="js/modernizr.js"></script> <!-- Modernizr -->
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarek Lichaa El Khoury - Software Developer Portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="page-top" class="politics_version">
+<body>
+    <div class="scroll-progress"></div>
+    <div class="bg-pattern"></div>
+    <div class="grid-overlay"></div>
 
-    <!-- LOADER -->
-    <div id="preloader">
-        <div id="main-ld">
-			<div id="loader"></div>  
-		</div>
-    </div><!-- end loader -->
-    <!-- END LOADER -->
-	
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<img class="img-fluid" src="images/logo.png" alt="" />
-		</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-            </li>
-			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-	
-	<section id="home" class="main-banner parallaxie" style="background: url('images/home.jpg')">
-		<div class="heading">
-			<h1>Hello I'm Tarek</h1>
-			<p>"The best way to predict the future is to create it."</p>
-			<h3 class="cd-headline clip is-full-width">
-				<span>Graduate In </span>
-				<span class="cd-words-wrapper">
-					<b class="is-visible">Computer Science</b>
-				</span>
-			</h3>
-		</div>
-	</section>
+    <!-- Header -->
+    <header id="header">
+        <div class="logo" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">&lt;TL /&gt;</div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="nav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
 
-	<svg id="clouds" class="hidden-xs" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 85 100" preserveAspectRatio="none">
-        <path d="M-5 100 Q 0 20 5 100 Z
-            M0 100 Q 5 0 10 100
-            M5 100 Q 10 30 15 100
-            M10 100 Q 15 10 20 100
-            M15 100 Q 20 30 25 100
-            M20 100 Q 25 -10 30 100
-            M25 100 Q 30 10 35 100
-            M30 100 Q 35 30 40 100
-            M35 100 Q 40 10 45 100
-            M40 100 Q 45 50 50 100
-            M45 100 Q 50 20 55 100
-            M50 100 Q 55 40 60 100
-            M55 100 Q 60 60 65 100
-            M60 100 Q 65 50 70 100
-            M65 100 Q 70 20 75 100
-            M70 100 Q 75 45 80 100
-            M75 100 Q 80 30 85 100
-            M80 100 Q 85 20 90 100
-            M85 100 Q 90 50 95 100
-            M90 100 Q 95 25 100 100
-            M95 100 Q 100 15 105 100 Z">
-        </path>
-    </svg>
-
-    <div id="about" class="section wb">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
-                        <h2>About Tarek.</h2>
-                        <p>I am a computer science graduate from the Lebanese University, Faculty of Science, Fanar. </p>
-                        <p>I am always trying to improve my skills - I am currently taking UNITY3D and Microsoft Dynamics 365 classes.</p>
-                        <p>In my free time I like to play the guitar, participate in sport games (football, tennis, basketball, ...), as well as play some video games.</p>
-						<p>I have embarked on many projects and participated in some internships to be sited later on.</p>
-						<p>Currently working with Netiks International as a Software Developer</p>
-
-                        <a href="cv/Cv.docx" class="sim-btn btn-hover-new" data-text="Download CV" download><span>Download CV</span></a>
-                    </div><!-- end messagebox -->
-                </div><!-- end col -->
-
-                <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
-                        <img src="images/about.jpg" alt="" class="img-fluid img-rounded">
-                    </div><!-- end media -->
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-	
-    <div id="skills" class="section lb">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Skills</h3>
-                <p>Here Are Some Of The Skills I Possess.</p>
-            </div><!-- end title -->
-
-            <div class="row">
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-							<img src="images/skills/php1.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">PHP</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/html (1).png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">HTML</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/css-3.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">CSS</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/javascript (2).png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">JAVASCRIPT</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/website.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">.NETFRAMEWORK</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/sitecore.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">SiteCore</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/website.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">Xamarin</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-				<div class="col-md-4">
-                    <div class="services-inner-box">
-						<div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/wordpress-logo.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">WORDPRESS</p>
-						</div>
-					</div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/java (2).png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">JAVA</p>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/android1.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">ANDROIDSTUDIO</p>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/linux.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">LINUX</p>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/mysql.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">SQLSERVER</p>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/mysql (2).png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">MYSQL</p>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/c-logo.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">C++</p>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-                <div class="col-md-4">
-                    <div class="services-inner-box">
-                        <div class="ser-icon" style="display: flex;flex-direction: row;">
-                            <img src="images/skills/python.png" style="width: 65.6px;height: 65.6px;margin-top: 10%;">
-                            <p style="margin-left: 50%; font-size: 25px;font-weight: bold;">Python</p>
-                        </div>
-                    </div>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-	
-	<div id="projects" class="section lb">
-		<div class="container">
-			<div class="section-title text-left">
-                <h3>Projects</h3>
-                <p>Some Of The Projects Are University Projects Others Personal As Well As Work Projects.</p>
-            </div><!-- end title -->
-			
-			<div class="gallery-menu row">
-				<div class="col-md-12">
-					<div class="button-group filter-button-group text-left">
-						<button class="active" data-filter="*">All</button>
-						<button data-filter=".gal_a">Web Development</button>
-						<button data-filter=".gal_b">Mobile Development</button>
-						<button data-filter=".gal_c">Java Application</button>
-						<button data-filter=".gal_d">.Net/Python</button>
-					</div>
-				</div>
-			</div>
-				
-			<div class="gallery-list row">
-				<div class="col-md-4 col-sm-6 gallery-grid gal_d">
-					<div class="gallery-single fix">
-						<img src="images/DotNet/dotnet.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#DotNet" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_d">
-					<div class="gallery-single fix">
-						<img src="images/skills/sitecore.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#SiteCore" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_d">
-					<div class="gallery-single fix">
-						<img src="images/Ai/ai.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#Ai" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b">
-					<div class="gallery-single fix">
-						<img src="images/spy/spy.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#spygame" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_c">
-					<div class="gallery-single fix">
-						<img src="images/minesweeper/images.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#minesweeper" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b">
-					<div class="gallery-single fix">
-						<img src="images/bus/bus.jpg" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#busbooking" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_b">
-					<div class="gallery-single fix">
-						<img src="images/carpool/bg.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#carpool" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
-					<div class="gallery-single fix">
-						<img src="images/aram/ARAM.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#aram" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-md-4 col-sm-6 gallery-grid gal_a">
-					<div class="gallery-single fix">
-						<img src="images/loeh/loeh.png" style="width: 350px;height: 311.1px;" class="img-fluid" alt="Image">
-						<div class="img-overlay">
-							<a href="#loeh" data-toggle="modal" class="hoverbutton global-radius"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="experience" class="section lb">
-		<div class="container">
-			<div class="section-title text-left">
-                <h3>Experience</h3>
-                <p>I have had 2 internships and then imbarked in a Software development job.</p>
-            </div><!-- end title -->
-			
-			<div class="row">
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="images/exp/exp.png" style="width: 350px;height: 262.5px;" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>Mar</span>
-								<span>2020</span>
-                                <span>-</span>
-                                <span>Jun</span>
-                                <span>2020</span>
-							</div>
-						</div>
-						<div class="post-info">
-							<h4>Jinny Software.</h4>
-							<p>Title: Software Engineer</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="images/exp/exp.jpg" style="width: 350px;height: 262.5px;" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>Feb</span>
-								<span>2021</span>
-                                <span>-</span>
-                                <span>May</span>
-                                <span>2021</span>
-							</div>
-						</div>
-						<div class="post-info">
-							<h4>Broaden.</h4>
-							<p>Title: Web Developper</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
-						<div class="post-thumb">
-							<img src="images/exp/netiksexp.jpg" style="width: 350px;height: 262.5px;" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>June</span>
-								<span>2021</span>
-                                <span>-</span>
-                                <span>Present</span>
-							</div>
-						</div>
-						<div class="post-info">
-							<h4>Netiks International</h4>
-							<p>Title: Software Developper</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-
-    <div id="contact" class="section db">
-        <div class="container">
-            <div class="section-title text-left">
-                <h3>Contact</h3>
-                <p>Feel Free To Contact Me through Email:</p>
-            </div><!-- end title -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="contact_form">
-                        <div id="message"></div>
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
-							<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-										<input class="form-control" id="name" type="text" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name.">
-										<p class="help-block text-danger"></p>
-									</div>
-									<div class="form-group">
-										<input class="form-control" id="email" type="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email address.">
-										<p class="help-block text-danger"></p>
-									</div>
-									<div class="form-group">
-										<input class="form-control" id="phone" type="tel" placeholder="Your Phone" required="required" data-validation-required-message="Please enter your phone number.">
-										<p class="help-block text-danger"></p>
-									</div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-										<textarea class="form-control" id="txtmessage" placeholder="Your Message" required="required" data-validation-required-message="Please enter a message."></textarea>
-										<p class="help-block text-danger"></p>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-								<div class="col-lg-12 text-center">
-									<div id="success"></div>
-									<button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Send Message" type="submit">Send Message</button>
-								</div>
-							</div>
-						</form>
-                    </div>
-                </div><!-- end col -->
-            </div><!-- end row -->
-        </div><!-- end container -->
-    </div><!-- end section -->
-
-    <!--Modal-->
-	<div id="DotNet" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">Online banking website</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">Website, Mobile Application</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">C#,Xamarin</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">This is an online banking website. Through out it the bank user can do ordinary bank transactions and check al profile details. (check balance, dure bills, Transfers, i.e: own, inside/outside beneficiary, cards,...). This app has high security, talked directly with the bank to always get updated values and send values. It also has an admin portal for the admins to monitor everything and divide security roles among the users. Concerning the associated mobile application, it was build using .Net Xamarin on iOS and android. It has all the same functionality as the website including the admin portal.</p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-tag">💻 SOFTWARE DEVELOPER</div>
+            <h1>Tarek Lichaa<br>El Khoury</h1>
+            <p class="hero-subtitle">"The best way to predict the future is to create it."</p>
+            <p>Computer Science graduate passionate about building secure banking solutions and innovative applications. With 4+ years of expertise in .NET, Xamarin, and modern frameworks, I transform complex challenges into elegant, user-friendly software that makes a real impact.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <span>Get In Touch</span>
+                </a>
+                <a href="downloads/Tarek_Lichaa_CV.pdf" target="_blank" class="btn btn-secondary" download>
+                    <span>Download CV</span>
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <span>View Projects</span>
+                </a>
             </div>
         </div>
-      </div>
-    </div>
+        <div class="hero-decoration">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+    </section>
 
-    <!--Modal-->
-	<div id="SiteCore" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">SiteCore banking website</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="section-header reveal">
+            <div class="section-tag">GET TO KNOW ME</div>
+            <h2 class="section-title">About Tarek</h2>
+            <p class="section-subtitle">A passionate developer dedicated to crafting innovative solutions</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card reveal stagger-1">
+                <div class="stat-number">4+</div>
+                <div class="stat-label">Years Experience</div>
             </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">Website</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">C#, SiteCore Framework</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">This is a website for a well-known bank. Using all of SiteCores features I developed a customized website with a backend content management system for the client on which a marketing campaign, email campaigns, user activities logs as well as other features can be personalized and monitored by the client.</p>
-              </div>
+            <div class="stat-card reveal stagger-2">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Technologies</div>
             </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+            <div class="stat-card reveal stagger-3">
+                <div class="stat-number">20+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card reveal stagger-4">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Certifications</div>
             </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!--Modal-->
-	<div id="Ai" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">Ai product</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="section-header reveal">
+            <div class="section-tag">TECHNICAL EXPERTISE</div>
+            <h2 class="section-title">Skills & Technologies</h2>
+            <p class="section-subtitle">A comprehensive toolkit for building modern applications</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-card reveal stagger-1">
+                <span class="skill-icon">📱</span>
+                <h3 class="skill-title">Mobile Development</h3>
+                <ul class="skill-items">
+                    <li>Xamarin iOS & Android - 4 years</li>
+                    <li>Swift - 1 year</li>
+                    <li>Android Studio (Java) - 4 months</li>
+                    <li>Cross-platform expertise</li>
+                    <li>Native performance optimization</li>
+                </ul>
             </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">Ai algorithm</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">C#, Python, Azure ML Studio</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">Using pipelines in Azure ML studio and optimizing them using python, the product can give recommendations to sellers on what a customer is most likely to purchase from the inventory.</p>
-              </div>
+
+            <div class="skill-card reveal stagger-2">
+                <span class="skill-icon">⚡</span>
+                <h3 class="skill-title">Backend & Frameworks</h3>
+                <ul class="skill-items">
+                    <li>C# & .NET Core - 4 years</li>
+                    <li>Web Services & REST APIs - 4 years</li>
+                    <li>SiteCore CMS - 3 years</li>
+                    <li>PHP & MySQL - 4 months</li>
+                    <li>Microservices architecture</li>
+                </ul>
             </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+
+            <div class="skill-card reveal stagger-3">
+                <span class="skill-icon">🗄️</span>
+                <h3 class="skill-title">Database & Cloud</h3>
+                <ul class="skill-items">
+                    <li>SQL Server - 4 years</li>
+                    <li>MySQL - 4 months</li>
+                    <li>Azure Machine Learning</li>
+                    <li>Python - 4 months</li>
+                    <li>Power Apps Development</li>
+                </ul>
+            </div>
+
+            <div class="skill-card reveal stagger-4">
+                <span class="skill-icon">🎨</span>
+                <h3 class="skill-title">Frontend & UI</h3>
+                <ul class="skill-items">
+                    <li>HTML, CSS, JavaScript - 4 years</li>
+                    <li>jQuery & Bootstrap - 4 years</li>
+                    <li>Responsive Design</li>
+                    <li>WordPress - Custom themes</li>
+                    <li>Modern UI/UX practices</li>
+                </ul>
+            </div>
+
+            <div class="skill-card reveal stagger-5">
+                <span class="skill-icon">🔧</span>
+                <h3 class="skill-title">Tools & Platforms</h3>
+                <ul class="skill-items">
+                    <li>Git & Version Control</li>
+                    <li>Azure DevOps</li>
+                    <li>Visual Studio / VS Code</li>
+                    <li>Xcode & Android Studio</li>
+                    <li>Agile Methodologies</li>
+                </ul>
+            </div>
+
+            <div class="skill-card reveal stagger-6">
+                <span class="skill-icon">🎓</span>
+                <h3 class="skill-title">Certifications</h3>
+                <ul class="skill-items">
+                    <li>Microsoft Azure Developer</li>
+                    <li>DevOps Engineer Expert</li>
+                    <li>Computer Science Degree</li>
+                    <li>Continuous learner</li>
+                    <li>Currently: Unity3D & Dynamics 365</li>
+                </ul>
             </div>
         </div>
-      </div>
-    </div>
-	
-    <!--Modal-->
-    <div id="spygame" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">Spy Game</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="section-header reveal">
+            <div class="section-tag">MY JOURNEY</div>
+            <h2 class="section-title">Work Experience</h2>
+            <p class="section-subtitle">Building financial technology solutions that matter</p>
+        </div>
+
+        <div class="timeline">
+            <div class="timeline-item reveal">
+                <div class="timeline-date">JUNE 2021 - PRESENT</div>
+                <h3 class="timeline-title">Intermediate Software Developer</h3>
+                <div class="timeline-company">Netiks International</div>
+                <p class="timeline-description">
+                    Leading development of comprehensive mobile and online banking applications for Lebanon's banking sector. Architected secure payment systems, transfer platforms, and full client management solutions using .NET and Xamarin for both iOS and Android. Delivered a fully customized Sitecore CMS website with content management capabilities for a major bank. Extended technical expertise into Azure Machine Learning and Python for AI-driven projects, while building multiple Power Apps solutions to streamline business operations.
+                </p>
             </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">Mobile Game</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">Android Studio (Java & XML )</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">It’s a Tic-tac-toe game which appears normal to the user, once the required permissions are granted it accesses the phone’s core information (MAC address, phone number, contacts, call log, gallery images, etc.) and sends them to database where it is linked to the specified user</p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
+
+            <div class="timeline-item reveal">
+                <div class="timeline-date">FEBRUARY 2021 - MAY 2021</div>
+                <h3 class="timeline-title">Web Developer</h3>
+                <div class="timeline-company">Broaden</div>
+                <p class="timeline-description">
+                    Launched professional career as a PHP developer, rapidly mastering MySQL and embracing the importance of ownership and responsibility in software development. Built strong foundations in web development principles and adapted to professional project workflows.
+                </p>
             </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-     <!--Modal-->
-    <div id="minesweeper" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">MineSweeper Game</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">Java Game</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">Java</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">Minesweeper is a single-player puzzle video game. The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Photo</label>
-                <p class="form-control"></p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
-            </div>
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="section-header reveal">
+            <div class="section-tag">MY WORK</div>
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">A showcase of solutions that solve real-world problems</p>
         </div>
-      </div>
-    </div>
 
-     <!--Modal-->
-    <div id="busbooking" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">Bus Booking</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">Website & Mobile App</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">Android Studio (Java & XML ) & HTML,CSS,JS,PHP,MySQL</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">Bus Booking contains 2 types of users: bus drivers, and bus passengers. Each driver has the ability to registers their bus information on the platform. Then the passengers can request a ride with the desired bus driver.</p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
-            </div>
-        </div>
-      </div>
-    </div>
-
-     <!--Modal-->
-    <div id="carpool" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">Car Pool App</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">Mobile App</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">Android Studio (Java & XML )</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">Car Pool allows university students to share rides, reducing each person's travel costs and the stress of driving.It is also a more environmentally friendly and sustainable way to travel as sharing journeys reduces air pollution.</p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
-            </div>
-        </div>
-      </div>
-    </div>
-
-     <!--Modal-->
-    <div id="aram" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">ARAM Architects Website</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">FrontEnd & BackEnd Websites</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">HTML,CSS,JS,PHP,MySQL</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">ARAM is able to control their websites output such as projects,testimonials,.. through w backend website.</p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
-            </div>
-        </div>
-      </div>
-    </div>
-
-     <!--Modal-->
-    <div id="loeh" class="modal fade">
-      <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">            
-              <h4 class="modal-title">LOEH Organisation Website</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            </div>
-            <div class="modal-body">
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Type</label>
-                <p class="form-control">FrontEnd & BackEnd Websites</p>
-              </div>     
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Language Used</label>
-                <p class="form-control">HTML,CSS,JS,PHP,MySQL</p>
-              </div>
-              <div class="form-group">
-                <label style="margin-bottom: 10px;">Description</label>
-                <p class="form-control">LOEH </p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <input type="button" class="btn btn-default" data-dismiss="modal" value="Close">
-            </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="copyrights">
-        <div class="container">
-            <div class="footer-distributed">
-                <div class="footer-left">
-                    <p class="footer-links">
-                        <a class="nav-link js-scroll-trigger" href="#">Home</a>
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
-                        <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                        <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-                        <a class="nav-link js-scroll-trigger" href="#experience">Experiece</a>
-                        <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                    </p>
-                    <p class="footer-company-name">All Rights Reserved. &copy; 2023 <a href="#">Tarek</a><a href="https://www.linkedin.com/in/tarek-lichaa-el-khoury-594832197/">  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a></p>
-
+        <div class="projects-grid">
+            <div class="project-card reveal stagger-1">
+                <div class="project-number">01</div>
+                <span class="project-icon">🏦</span>
+                <h3 class="project-title">Online Banking Platform</h3>
+                <div class="project-type">WEBSITE & MOBILE APPLICATION</div>
+                <p class="project-description">
+                    Comprehensive banking solution enabling users to perform transactions, check balances, pay bills, manage transfers (own/beneficiary), and handle cards. Features high security with direct bank integration, admin portal, and full mobile apps for iOS and Android built with Xamarin.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">.NET</span>
+                    <span class="tag">Xamarin</span>
+                    <span class="tag">Banking</span>
+                    <span class="tag">Security</span>
                 </div>
             </div>
-        </div><!-- end container -->
-    </div><!-- end copyrights -->
 
-    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+            <div class="project-card reveal stagger-2">
+                <div class="project-number">02</div>
+                <span class="project-icon">🌐</span>
+                <h3 class="project-title">SiteCore Banking Website</h3>
+                <div class="project-type">ENTERPRISE WEBSITE</div>
+                <p class="project-description">
+                    Custom SiteCore-based website for a major bank featuring a powerful content management system. Enables marketing campaigns, email automation, user activity tracking, and personalized user experiences. Built with full backend customization for client control.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">SiteCore</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">CMS</span>
+                    <span class="tag">Enterprise</span>
+                </div>
+            </div>
 
-    <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
-	<!-- Camera Slider -->
-	<!--<script src="js/jquery.mobile.customized.min.js"></script>-->
-	<script src="js/jquery.easing.1.3.js"></script> 
-	<script src="js/parallaxie.js"></script>
-	<script src="js/headline.js"></script>
-	<!-- Contact form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
-    <script src="js/jquery.vide.js"></script>
+            <div class="project-card reveal stagger-3">
+                <div class="project-number">03</div>
+                <span class="project-icon">🤖</span>
+                <h3 class="project-title">AI Recommendation Engine</h3>
+                <div class="project-type">MACHINE LEARNING</div>
+                <p class="project-description">
+                    Advanced AI system using Azure ML Studio pipelines optimized with Python. Provides intelligent product recommendations to sellers based on customer purchase patterns and inventory data. Leverages machine learning for predictive analytics.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Azure ML</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">AI</span>
+                </div>
+            </div>
 
+            <div class="project-card reveal stagger-4">
+                <div class="project-number">04</div>
+                <span class="project-icon">📱</span>
+                <h3 class="project-title">Spy Game (Security Demo)</h3>
+                <div class="project-type">MOBILE GAME</div>
+                <p class="project-description">
+                    Educational security demonstration app disguised as Tic-tac-toe game. Showcases how apps can access device information when permissions are granted, highlighting mobile security concepts and data privacy awareness.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Security</span>
+                    <span class="tag">Education</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal stagger-5">
+                <div class="project-number">05</div>
+                <span class="project-icon">🚌</span>
+                <h3 class="project-title">Bus Booking System</h3>
+                <div class="project-type">WEBSITE & MOBILE APP</div>
+                <p class="project-description">
+                    Dual-platform booking system connecting bus drivers with passengers. Drivers register bus information while passengers can search and book rides. Features real-time availability and booking management across web and mobile.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Booking</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal stagger-6">
+                <div class="project-number">06</div>
+                <span class="project-icon">🚗</span>
+                <h3 class="project-title">Car Pool App</h3>
+                <div class="project-type">MOBILE APPLICATION</div>
+                <p class="project-description">
+                    Sustainable transportation solution for university students to share rides, reducing travel costs and environmental impact. Features ride matching, cost splitting, and route optimization for campus communities.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Android</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">Maps API</span>
+                    <span class="tag">Social</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal stagger-1">
+                <div class="project-number">07</div>
+                <span class="project-icon">🏢</span>
+                <h3 class="project-title">ARAM Architects Website</h3>
+                <div class="project-type">FRONTEND & BACKEND</div>
+                <p class="project-description">
+                    Professional architecture firm website with custom backend CMS. Enables client to manage projects, testimonials, and portfolio through an intuitive admin interface. Fully responsive design showcasing architectural work.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">PHP</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">CMS</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal stagger-2">
+                <div class="project-number">08</div>
+                <span class="project-icon">💎</span>
+                <h3 class="project-title">MineSweeper Game</h3>
+                <div class="project-type">JAVA APPLICATION</div>
+                <p class="project-description">
+                    Classic puzzle game implementation in Java. Players clear a board without detonating hidden mines using numerical clues. Features multiple difficulty levels and clean interface design.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Game Dev</span>
+                    <span class="tag">Logic</span>
+                </div>
+            </div>
+
+            <div class="project-card reveal stagger-3">
+                <div class="project-number">09</div>
+                <span class="project-icon">⚙️</span>
+                <h3 class="project-title">Power Apps Solutions</h3>
+                <div class="project-type">BUSINESS AUTOMATION</div>
+                <p class="project-description">
+                    Collection of custom Power Apps canvas applications for streamlining business processes. Automated workflows, improved data management, and enhanced productivity through tailored low-code solutions.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Power Apps</span>
+                    <span class="tag">Canvas Apps</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">Microsoft</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="section-header reveal">
+            <div class="section-tag">GET IN TOUCH</div>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Interested in working together? I'd love to hear from you!</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-item reveal stagger-1">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                    <h3>Email</h3>
+                    <p><a href="mailto:tarekelkhoury99@gmail.com">tarekelkhoury99@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item reveal stagger-2">
+                <div class="contact-icon">📱</div>
+                <div class="contact-details">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+96170401158">+961 70 401 158</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item reveal stagger-3">
+                <div class="contact-icon">📍</div>
+                <div class="contact-details">
+                    <h3>Location</h3>
+                    <p>Byblos, Lebanon</p>
+                </div>
+            </div>
+
+            <div class="contact-item reveal stagger-4">
+                <div class="contact-icon">💼</div>
+                <div class="contact-details">
+                    <h3>LinkedIn</h3>
+                    <p><a href="https://www.linkedin.com/in/tarek-lichaa-el-khoury-594832197/" target="_blank">Connect with me</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem;">
+            <div class="reveal">
+                <h3 style="color: var(--text); margin-bottom: 1rem; font-size: 2rem;">Open to Opportunities</h3>
+                <p style="color: var(--text-dim); margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Currently seeking new challenges in software development, particularly in fintech, mobile applications, and innovative technology solutions. Always eager to learn and expand my technical expertise.
+                </p>
+                <a href="mailto:tarekelkhoury99@gmail.com" class="btn btn-primary">
+                    <span>Send a Message</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="mailto:tarekelkhoury99@gmail.com" class="social-link" title="Email">✉️</a>
+                <a href="tel:+96170401158" class="social-link" title="Phone">📞</a>
+                <a href="https://www.linkedin.com/in/tarek-lichaa-el-khoury-594832197/" target="_blank" class="social-link" title="LinkedIn">💼</a>
+                <a href="#" class="social-link" title="GitHub">💻</a>
+            </div>
+            <p class="footer-text">&copy; 2025 Tarek Lichaa El Khoury. All rights reserved.</p>
+            <p class="footer-text" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                Built with passion for excellence in software development.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
